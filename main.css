@@ -72,6 +72,10 @@ nav li a {
   display: flex;
 }
 
+
+.lista-veiculos li button {
+  align-items: flex-end;
+}
 #sobre-a-loja img{
   max-width: 400px;
   margin-right: 24px;
@@ -103,12 +107,13 @@ section h2 {
   margin: 16px 0;
 }
 
+
 .item-central {
   margin: 0 5%;
 }
 
 button {
-  display: block;
+  display: flexbox;
   width: 100%;
   padding: 8px 0;
   border: none;
@@ -147,24 +152,24 @@ button {
   padding: 8px;
 }
   
-  .form-campo textarea {
-    resize: none;
-    height: 120px;
-  }
+.form-campo textarea {
+  resize: none;
+  height: 120px;
+}
 
-  form {
-    max-width: 360px;
-  }
+form {
+  max-width: 360px;
+}
 
-  form button {
-    max-width: 120px;
-  }
+form button {
+  max-width: 120px;
+}
 
-  footer li {
-    list-style: none;
-    margin-left: 16px;
-  }
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
 
-  footer li img {
-    height: 32px;
-  }
+footer li img {
+  height: 32px;
+}

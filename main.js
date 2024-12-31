@@ -12,8 +12,7 @@ $(document).ready(function(){
     } 
     {
       placeholder: 'dd/mm/aaaa'
-    }) 
-   
+    })  
   let mascara = if (celular) ? '(00) 00000-0000' : ('00) 0000-0000'
   $('#telefone').mask(mascara)*/
 
@@ -49,7 +48,18 @@ $(document).ready(function(){
       if (camposIncorretos > 0) {
         alert(`Há ${camposIncorretos} campo(s) incorreto(s)`);
       } 
-      console.log(camposIncorretos)
     }
   })
+
+  $('.lista-veiculos button').click(function(){
+    const destino = $('#contato');
+    const nomeVeiculo = $(this).parent().find('h3').text();
+
+    $('#veiculo-interesse').val(nomeVeiculo);
+
+    $('html').animate({
+      scrollTop: destino.offset().top
+    }, 1000)
+  })
+
 })
